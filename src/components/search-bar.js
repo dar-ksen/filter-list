@@ -15,14 +15,14 @@ class SearchBar extends React.Component {
           onChange={this.handleFilterTextChange}
         />
         <p>
-        <label>
-          <input
+          <input id="showInStock"
             type="checkbox"
             checked={inStockOnly}
             onChange={this.handleInStockChange}
-          />{" "}
-          Показывать только товары в наличии
-        </label>
+          />
+          <label htmlFor="showInStock">
+            Показывать только товары в наличии
+          </label>
         </p>
       </form>
     );

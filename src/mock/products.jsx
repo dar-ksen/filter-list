@@ -1,35 +1,35 @@
 const PRODUCTS = [
   {
-    category: "Sporting Goods",
+    category: "Спортовары",
     price: "$49.99",
     stocked: true,
-    name: "Football",
+    name: "Футбол",
   },
   {
-    category: "Sporting Goods",
+    category: "Спортовары",
     price: "$9.99",
     stocked: true,
-    name: "Baseball",
+    name: "Бейсбол",
   },
   {
-    category: "Sporting Goods",
+    category: "Спортовары",
     price: "$29.99",
     stocked: false,
-    name: "Basketball",
+    name: "Баскетбол",
   },
   {
-    category: "Electronics",
+    category: "Электроника",
     price: "$99.99",
     stocked: true,
     name: "iPod Touch",
   },
   {
-    category: "Electronics",
+    category: "Электроника",
     price: "$399.99",
     stocked: false,
     name: "iPhone 5",
   },
-  { category: "Electronics", price: "$199.99", stocked: true, name: "Nexus 7" },
+  { category: "Электроника", price: "$199.99", stocked: true, name: "Nexus 7" },
 ];
 
 export default PRODUCTS;

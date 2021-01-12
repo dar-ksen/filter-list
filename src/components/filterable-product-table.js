@@ -3,29 +3,15 @@ import React from "react";
 import SearchBar from "./search-bar";
 import ProductTable from "./product-table";
 
-class FilterableProductTable extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        filterText: '',
-        inStockOnly: false
-      };
-      
-      this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
-      this.handleInStockChange = this.handleInStockChange.bind(this);
+export default class FilterableProductTable extends React.Component {
+    state = {
+      filterText: '',
+      inStockOnly: false
     }
   
-    handleFilterTextChange(filterText) {
-      this.setState({
-        filterText: filterText
-      });
-    }
+    handleFilterTextChange = (filterText)  => this.setState({filterText: filterText});
     
-    handleInStockChange(inStockOnly) {
-      this.setState({
-        inStockOnly: inStockOnly
-      })
-    }
+    handleInStockChange = (inStockOnly) => this.setState({inStockOnly: inStockOnly})
   
     render() {
       return (
@@ -45,5 +31,3 @@ class FilterableProductTable extends React.Component {
       );
     }
   }
-
-  export default FilterableProductTable;
