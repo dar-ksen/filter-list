@@ -29,6 +29,10 @@ const ProductTable = ({filterText, inStockOnly, products}) => {
     lastCategory = category;
   });
 
+  if (rows.length === 0) {
+    return <p>Ничего не найдено...</p>;
+  }
+
   return (
     <table>
       <thead>
