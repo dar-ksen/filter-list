@@ -6,8 +6,6 @@ import App from './components/app';
 import PRODUCTS from './mock/products';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App products={PRODUCTS}  />
-  </React.StrictMode>,
+  <App products={PRODUCTS}  />,
   document.getElementById('root')
 );

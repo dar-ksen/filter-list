@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+th {
+  text-align: left;
+}
+
 .product-table {
   height: 100vh;
   max-width: 500px;
@@ -20,4 +24,8 @@ code {
   align-self: center;
   justify-content: center;
   margin: 0 auto;
+}
+
+.warning {
+  color: red;
 }
